@@ -3,29 +3,29 @@ l_english:
  barbaricum_suebi_boiohaemia_mission:0 "The Fall of Boiohaemium" #Germanics invaded Boiohaemia around 50 BC because of riches and its defendability, Maroboduus fled from the Main valley around 10 BC to become their king 
  barbaricum_suebi_boiohaemia_mission_BUTTON_TOOLTIP:0 ""
  barbaricum_suebi_boiohaemia_mission_BUTTON_DETAILS:0 ""
- barbaricum_suebi_boiohaemia_mission_DESCRIPTION:0 ""
- barbaricum_suebi_boiohaemia_mission_CRITERIA_DESCRIPTION:0 ""
+ barbaricum_suebi_boiohaemia_mission_DESCRIPTION:0 "The rich and fertile lands of Boiohaemium are better suited to settling and farming, then athe cold wastes of the north. In addition, Boiohaemium is easier to defend. The Danube safegardes the south and from the north mountains impede trespassers."
+ barbaricum_suebi_boiohaemia_mission_CRITERIA_DESCRIPTION:0 "Conquer the rich and fertile lands to your south and make it your new home."
  barbaricum_suebi_boiohaemia_mission_REWARD_DESCRIPTION:0 ""
  # Tasks
  barbaricum_suebi_boiohaemia_mission_task_1:0 "The Boiohaemian Basin" #
- barbaricum_suebi_boiohaemia_mission_task_1_DESC:0 ""
+ barbaricum_suebi_boiohaemia_mission_task_1_DESC:0 "Our scouts have reported that there are fertile lands to the south. It is time to send an expedition to secure access to them."
  barbaricum_suebi_boiohaemia_mission_task_2:0 "Invade Boiohaemia"
- barbaricum_suebi_boiohaemia_mission_task_2_DESC:0 ""
+ barbaricum_suebi_boiohaemia_mission_task_2_DESC:0 "These lands are fertile and rich. It's inhabitants are weak, their fields ripe for the taking."
  barbaricum_suebi_boiohaemia_mission_task_3:0 "Cross the River Marus" #Invadia Moravia
- barbaricum_suebi_boiohaemia_mission_task_3_DESC:0 ""
+ barbaricum_suebi_boiohaemia_mission_task_3_DESC:0 "Across the river Marus are the best lands for growing crops and animal husbandry."
  barbaricum_suebi_boiohaemia_mission_task_4:0 "Maroboduus's Palace"   
- barbaricum_suebi_boiohaemia_mission_task_4_DESC:0 "" #Marobooduus errected his court in the middle of Boiohaemia
+ barbaricum_suebi_boiohaemia_mission_task_4_DESC:0 "In Boiohaemium, your palace shall tower over your lands. Your seat of power will sinpire fear and awe among many." #Marobooduus erected his court in the middle of Boiohaemia
  barbaricum_suebi_boiohaemia_mission_task_5:0 "The Safe Haven for Traitors" #Traitors from Boihaemia fled to Guthonia and would later on come back to cause troubles
- barbaricum_suebi_boiohaemia_mission_task_5_DESC:0 ""
+ barbaricum_suebi_boiohaemia_mission_task_5_DESC:0 "The traitosr fled to Guthonia. Beware, the ymight casue trouble in the future."
  barbaricum_suebi_boiohaemia_mission_task_6:0 "Defend the Basin" #Defend the Basin via the choke points
- barbaricum_suebi_boiohaemia_mission_task_6_DESC:0 ""
+ barbaricum_suebi_boiohaemia_mission_task_6_DESC:0 "The only access to your new home is through chokepoints. If you were to fortify these, no one with ill intentions could pass."
  barbaricum_suebi_boiohaemia_mission_task_7:0 "Marcomannic Wars" #Increase levy size = stronger army to defend against foes (like the Marcomannic wars)
  barbaricum_suebi_boiohaemia_mission_task_7_DESC:0 ""
  barbaricum_suebi_boiohaemia_mission_task_8:0 "Cotinian Slaves" #Celtic Cotini were enslaved by the Germanics to work in the iron mines of modern Slovakia
- barbaricum_suebi_boiohaemia_mission_task_8_DESC:0 ""
+ barbaricum_suebi_boiohaemia_mission_task_8_DESC:0 "The Cotinii make for good workers. Recently, we have been in need of more miners. They will surely fit the bill."
  barbaricum_suebi_boiohaemia_mission_task_9:0 "Spread the Word of Tuisto" #Convert Boiohaemian religion to Tuistic
- barbaricum_suebi_boiohaemia_mission_task_9_DESC:0 ""
+ barbaricum_suebi_boiohaemia_mission_task_9_DESC:0 "A home is only as good as the spirit ruling over it. The only true spirit ours!"
  barbaricum_suebi_boiohaemia_mission_task_10:0 "A new Germanic Home" #Assimilate Boiohaemia to Germanic culture
- barbaricum_suebi_boiohaemia_mission_task_10_DESC:0 ""
+ barbaricum_suebi_boiohaemia_mission_task_10_DESC:0 "A home is aonly as strong as the weakest in it. As we have shown, we are the strongest! To be stronger, everyone needs to be like us!"
  barbaricum_suebi_boiohaemia_mission_task_11:0 "Moenus Trade" #trade route to the west, Moenus = Main
- barbaricum_suebi_boiohaemia_mission_task_11_DESC:0 ""
+ barbaricum_suebi_boiohaemia_mission_task_11_DESC:0 "Over the Moenus river, there are many people we could trade with. It would surely be beneficial if we were to initiate contact..."
