@@ -1,0 +1,399 @@
+﻿namespace = flavor_germanics
+
+#Terp disaster
+flavor_germanics.1 = { 
+	type = country_event
+	title = "flavor_germanics.1.t"
+	desc = "flavor_germanics.1.desc"
+	
+	picture = natural_disaster
+	
+	left_portrait = root.current_ruler
+	
+	goto_location = scope:germanics_1_target
+	
+	trigger = {
+		war = no
+		OR = {
+			tag = SXS
+			tag = CHC
+		}
+		any_owned_province = {
+			has_province_modifier = north_sea_terps
+			NOT = { has_province_modifier = terp_disaster }
+		}
+		NOT = {
+			has_variable = terp_flood_cooldown
+		}
+	}
+	
+	immediate = {
+		random_owned_province = {
+			limit = {
+					has_province_modifier = north_sea_terps
+					NOT = { has_province_modifier = terp_disaster }
+			}
+			save_scope_as = germanics_1_target	
+		}
+		set_variable = {
+			name = terp_flood_cooldown
+			days = 18250
+		}
+	}
+	
+	option = {
+		name = "flavor_germanics.1.a"
+		add_treasury = {
+			subtract = root.has_monthly_income
+			multiply = 6
+		}
+		scope:germanics_1_target = {
+			add_province_modifier = {
+				name = terp_disaster
+				duration = 1825
+			} 
+			hidden_effect = {
+					province_pop_disaster_medium = yes
+			}
+		}
+		custom_tooltip = "flavor_germanics.1.tt"
+	}
+	option = {
+		name = "flavor_germanics.1.b"
+		add_manpower = -2
+		scope:germanics_1_target = {
+			add_province_modifier = {
+				name = terp_disaster
+				duration = 1825
+			} 
+			hidden_effect = {
+					province_pop_disaster_medium = yes
+			}
+		}
+		custom_tooltip = "flavor_germanics.1.tt"
+	}
+	option = {
+		name = "flavor_germanics.1.c"
+		scope:germanics_1_target = {
+			add_province_modifier = {
+				name = terp_disaster
+				duration = 3650
+			} 
+			hidden_effect = {
+					province_pop_disaster_medium = yes
+			}
+		}
+		current_ruler = {
+				add_popularity = -10
+		}
+		custom_tooltip = "flavor_germanics.1.tt"
+	}
+}
+#flavor_germanics.2 = { 
+#	type = country_event
+#	title = "flavor_germanics.2.t"
+#	desc = "flavor_germanics.2.desc"
+#	
+#	picture = city_construction
+#	
+#	left_portrait = root.current_ruler
+#	right_portrait = C:SXS.current_ruler
+#	
+#	goto_location = 3836
+#	
+#	trigger = {
+#		war = no
+#		tag = CHC
+#		owns = 3836
+#		NOT = {
+#			p:3836 = {
+#				has_province_modifier = north_sea_terps
+#			}
+#		}
+#		NOT = {
+#			has_variable = chaucia_terp
+#		}
+#		OR = {
+#			civic_tech > 8
+#			current_date > 650.1.1
+#		}
+#	}
+#	immediate = {
+#		set_variable = {
+#			name = chaucia_terp
+#		}
+#	}
+#	option = {
+#		name = "flavor_germanics.2.a"
+#		ai_chance = {
+#			factor = 100
+#		}
+#		add_manpower = -2
+#		p:3836 = {
+#			add_province_modifier = { 
+#				name = north_sea_terps 
+#			}
+#		}
+#		
+#	}
+#	option = {
+#		name = "flavor_germanics.2.b"
+#		ai_chance = {
+#			factor = 0
+#		}
+#		custom_tooltip = "no_effect_tooltip"
+#	}
+#}
+flavor_germanics.3 = { 
+	type = character_event
+	hidden = yes
+	
+	trigger = {
+		has_culture = ingvaeonic
+		has_religion = germanic_religion
+		is_close_relative = C:SXS.current_ruler
+		NOT = { 
+			C:SXS.current_ruler = {
+				has_character_modifier = dog_loved
+			}
+		}
+	}
+	
+	immediate = {
+		save_scope_as = rip_dead_dog
+		if = {
+			limit = {
+				exists = C:SXS
+				C:SXS = {
+					has_land = yes
+				}
+			}
+			C:SXS = {
+				trigger_event = {
+					id = flavor_germanics.4
+					days = { 15 25 }
+				}
+			}
+		}
+	}
+}
+flavor_germanics.4 = { 
+	type = country_event
+	title = "flavor_germanics.4.t"
+	desc = "flavor_germanics.4.desc"
+	
+	picture = celtic_village
+	
+	left_portrait = root.current_ruler
+	right_portrait = scope:rip_dead_dog
+	
+	option = {
+		name = "flavor_germanics.4.a"
+		root.current_ruler = {
+			add_character_modifier = { name = dog_loved }
+			remove_trait = depressed
+		}
+		hidden_effect = {
+			trigger_event = {
+					id = flavor_germanics.5
+					days = { 3650 5475 }
+			}
+		}
+	}
+	
+}
+flavor_germanics.5 = {
+	type = country_event
+	title = "flavor_germanics.5.t"
+	desc = "flavor_germanics.5.desc"
+	
+	picture = celtic_village
+	
+	left_portrait = root.current_ruler
+	
+	trigger = {
+		current_ruler = {
+			has_character_modifier = dog_loved 
+		}
+	}
+	
+	option = {
+		name = "flavor_germanics.5.a"
+		current_ruler = {
+			remove_character_modifier = dog_loved
+		}
+	}
+
+}
+
+# Semnonian sacrifice
+flavor_germanics.6 = {
+	type = country_event
+	title = "flavor_germanics.6.t"
+	desc = "flavor_germanics.6.desc"
+	picture = celtic_chiefs
+
+	left_portrait = current_ruler
+	left_portrait = scope:priest_advisor
+	right_portrait = scope:sacrifice_character
+
+	trigger = {
+		has_religion = germanic_religion
+		has_culture = irminonic
+		owns = 3986
+		NOT = { has_variable = rel_flavor_germanics_6_cooldown  }
+		any_character = {
+			prisoner = yes
+			NOT = { has_religion = root.religion }
+		}
+		any_character = {
+			has_priest_office_trigger = yes
+			has_religion = root.religion
+		}
+	}
+
+	immediate = {
+		set_variable = {
+			name = rel_flavor_germanics_6_cooldown 
+			days = 1825
+		}
+		random_character = {
+			limit = {
+				prisoner = yes
+				NOT = { has_religion = root.religion }
+			}
+			save_scope_as = sacrifice_character
+		}
+		random_character = {
+			limit = {
+				has_priest_office_trigger = yes				
+				has_religion = root.religion
+			}
+			save_scope_as = priest_advisor
+		}
+	}
+
+	option = {
+		name = "flavor_germanics.6.a"
+		add_stability = 5
+		add_centralization = -10
+		scope:priest_advisor = {
+			add_loyalty = loyalty_priest_allowed
+		}
+		scope:sacrifice_character = {
+			death = {
+				killer = scope:priest_advisor
+				death_reason = death_sacrifice
+			}
+		}
+	}
+
+	option = {
+		name = "flavor_germanics.6.b"
+		add_country_modifier = {
+			name = priests_refusing_to_perform_rites
+			duration = 3650
+		}
+		scope:priest_advisor = {
+			add_loyalty = loyalty_priest_refused
+		}
+		scope:sacrifice_character = {
+			add_rival = scope:priest_advisor
+		}
+	}
+}
+
+flavor_germanics.8 = {
+	type = country_event
+	title = "flavor_germanics.8.t"
+	desc = "flavor_germanics.8.desc"
+	
+	picture = celtic_village
+	
+	left_portrait = root.current_ruler
+	right_portrait = scope:priest_advisor
+	
+	trigger = {
+		has_religion = germanic_religion
+		has_this_omen = deity:omen_nehalennia 
+		war = no
+	}
+	
+	immediate = {
+		random_character = {
+			limit = {
+				has_priest_office_trigger = yes				
+				has_religion = root.religion
+			}
+			save_scope_as = priest_advisor
+		}
+	}
+	
+	option = {
+		name = "flavor_germanics.8.a"
+		add_stability = 5
+	}
+
+}
+
+flavor_germanics.7 = {
+	type = country_event
+	title = "flavor_germanics.7.t"
+	desc = "flavor_germanics.7.desc"
+	
+	picture = celtic_village
+	
+	left_portrait = root.current_ruler
+	right_portrait = scope:priest_advisor
+	
+	trigger = {
+		has_religion = germanic_religion
+		OR = {
+			has_this_omen = deity:omen_nerthus
+			owns = 3886
+		}
+		war = no
+		has_coasts = yes
+	}
+	
+	immediate = {
+		random_character = {
+			limit = {
+				has_priest_office_trigger = yes				
+				has_religion = root.religion
+			}
+			save_scope_as = priest_advisor
+		}
+		any_owned_province = {
+			num_of_slaves > 1
+			is_coastal = yes
+			save_scope_as = coastl_nerthus_scope
+		}
+	}
+	
+	option = {
+		name = "flavor_germanics.7.a"
+			p:coastl_nerthus_scope = {
+				random_pops_in_province = {
+                    limit = {
+                        pop_type = slave
+                    }
+                    save_scope_as = nerthus_pop
+            }
+		}
+		scope:nerthus_pop = {
+			kill_pop = yes
+		}
+		add_stability = 5
+	}
+	
+	option = {
+		name = "flavor_germanics.7.b"
+		add_country_modifier = {
+			name = priests_refusing_to_perform_rites
+			duration = 3650
+		}
+	}
+
+}
+
