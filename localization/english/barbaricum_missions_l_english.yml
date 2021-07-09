@@ -1,31 +1,31 @@
-﻿l_english:
+l_english:
  #Fall of Boiohaemium
- barbaricum_suebi_boiohaemia_mission:0 "The Fall of Boiohaemium"
+ barbaricum_suebi_boiohaemia_mission:0 "The Fall of Boiohaemium" #Germanics invaded Boiohaemia around 50 BC because of riches and its defendability, Maroboduus fled from the Main valley around 10 BC to become their king 
  barbaricum_suebi_boiohaemia_mission_BUTTON_TOOLTIP:0 ""
  barbaricum_suebi_boiohaemia_mission_BUTTON_DETAILS:0 ""
  barbaricum_suebi_boiohaemia_mission_DESCRIPTION:0 ""
  barbaricum_suebi_boiohaemia_mission_CRITERIA_DESCRIPTION:0 ""
  barbaricum_suebi_boiohaemia_mission_REWARD_DESCRIPTION:0 ""
  # Tasks
- barbaricum_suebi_boiohaemia_mission_task_1:0 "The Boiohaemian Basin"
+ barbaricum_suebi_boiohaemia_mission_task_1:0 "The Boiohaemian Basin" #
  barbaricum_suebi_boiohaemia_mission_task_1_DESC:0 ""
  barbaricum_suebi_boiohaemia_mission_task_2:0 "Invade Boiohaemia"
  barbaricum_suebi_boiohaemia_mission_task_2_DESC:0 ""
- barbaricum_suebi_boiohaemia_mission_task_3:0 "Cross the River Marus"
+ barbaricum_suebi_boiohaemia_mission_task_3:0 "Cross the River Marus" #Invadia Moravia
  barbaricum_suebi_boiohaemia_mission_task_3_DESC:0 ""
- barbaricum_suebi_boiohaemia_mission_task_4:0 "Maroboduus's Palace"
- barbaricum_suebi_boiohaemia_mission_task_4_DESC:0 ""
- barbaricum_suebi_boiohaemia_mission_task_5:0 "The Safe Haven for Traitors"
+ barbaricum_suebi_boiohaemia_mission_task_4:0 "Maroboduus's Palace"   
+ barbaricum_suebi_boiohaemia_mission_task_4_DESC:0 "" #Marobooduus errected his court in the middle of Boiohaemia
+ barbaricum_suebi_boiohaemia_mission_task_5:0 "The Safe Haven for Traitors" #Traitors from Boihaemia fled to Guthonia and would later on come back to cause troubles
  barbaricum_suebi_boiohaemia_mission_task_5_DESC:0 ""
- barbaricum_suebi_boiohaemia_mission_task_6:0 "Defend the Basin"
+ barbaricum_suebi_boiohaemia_mission_task_6:0 "Defend the Basin" #Defend the Basin via the choke points
  barbaricum_suebi_boiohaemia_mission_task_6_DESC:0 ""
- barbaricum_suebi_boiohaemia_mission_task_7:0 "Marcomannic Wars"
+ barbaricum_suebi_boiohaemia_mission_task_7:0 "Marcomannic Wars" #Increase levy size = stronger army to defend against foes (like the Marcomannic wars)
  barbaricum_suebi_boiohaemia_mission_task_7_DESC:0 ""
- barbaricum_suebi_boiohaemia_mission_task_8:0 "Cotinian Slaves"
+ barbaricum_suebi_boiohaemia_mission_task_8:0 "Cotinian Slaves" #Celtic Cotini were enslaved by the Germanics to work in the iron mines of modern Slovakia
  barbaricum_suebi_boiohaemia_mission_task_8_DESC:0 ""
- barbaricum_suebi_boiohaemia_mission_task_9:0 "Spread the Word of Tuisto"
+ barbaricum_suebi_boiohaemia_mission_task_9:0 "Spread the Word of Tuisto" #Convert Boiohaemian religion to Tuistic
  barbaricum_suebi_boiohaemia_mission_task_9_DESC:0 ""
- barbaricum_suebi_boiohaemia_mission_task_10:0 "A new Germanic Home"
+ barbaricum_suebi_boiohaemia_mission_task_10:0 "A new Germanic Home" #Assimilate Boiohaemia to Germanic culture
  barbaricum_suebi_boiohaemia_mission_task_10_DESC:0 ""
- barbaricum_suebi_boiohaemia_mission_task_11:0 "Moenus Trade"
+ barbaricum_suebi_boiohaemia_mission_task_11:0 "Moenus Trade" #trade root to the west, Moenus = Main
  barbaricum_suebi_boiohaemia_mission_task_11_DESC:0 ""
