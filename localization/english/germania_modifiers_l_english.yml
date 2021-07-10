@@ -1,0 +1,16 @@
+﻿l_english:
+ #Barbaricum - Germania
+ north_sea_terps:0 "Terp Settlement"
+ desc_north_sea_terps:0 "The people here live on terps, manmade hills made out of mud that increase the habitable amount of land."
+ terp_disaster:0 "Disastrous Flood"
+ desc_terp_disaster:0 "A disastrous flood has wrecked havoc in this area. The inhabitants are busy rebuilding their homes."
+ dog_loved:0 "Dog"
+ desc_dog_loved:0 "A dog follows you around, uplifting your spirits."
+ bohemia_defense_modifier:0 "Defence of Boiohaemia"
+ desc_bohemia_defense_modifier:0 "Atrition will plague invaders." 
+ saxon_raiders:0 "Saxon Raiders"
+ desc_saxon_raiders:0 ""
+ yngvi_blessing:0 "Blessing of Yngvi"
+ desc_yngvi_blessing:0 "We are graced by Yngvi."
+ cotini_slaves_modifier:0 "Cotinian Slaves"
+ desc_cotini_slaves_modifier:0 "The Cotini work our mines."
