@@ -297,7 +297,6 @@
         allow = {
 			OR = {
 				any_subject = {
-					is_ai = no
 					tag = OTN		
 				}
 				c:OTN = {
