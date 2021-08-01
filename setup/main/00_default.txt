@@ -6618,12 +6618,12 @@ country = {
 				3225 3226 3227 3126 3123 3122 3121 3144
 				3161 3160 3150 3145 3238 3212 3273 3236 3200 3239 3211
 				3124
-				3486 3487 3488 3489 3503 3504 3506 3505 3500 3499 3497 3494 3493 3108
+				3486 3504 3497 3494 3493 3108 #removed and given to Nuragic: 3505 3506 3499 3500 3503 3488 3487 3489
 				1471 # Melita (Malta)
 				1362 1366 1367 1283 1282 1278 1276 1284 #Malaca
 				1347 1348 #Carteia
 				3092 3095 3120 6301 6478 6490 #More North African Ports
-				7841 7842 7843
+				7841 7842 7843    
 			}
 			
 			treasures = { 45 }
@@ -14532,10 +14532,7 @@ country = {
 				{ deity = 431 }
 			}
 			
-			capital = 3501
-			
 			own_control_core = {
-				3501 3496 3502 3498
 			}
 		}
 		
@@ -14552,10 +14549,7 @@ country = {
 				{ deity = 431 }
 			}
 			
-			capital = 3491
-			
 			own_control_core = {
-				3491 3495
 			}
 		}
 		
@@ -16349,7 +16343,7 @@ country = {
 		}
 		
 		#Tibulatia
-		Y46 = {
+		X47 = {
 			government = tribal_kingdom
 			primary_culture = corsian
 			religion = carthaginian_pantheon
@@ -16369,7 +16363,7 @@ country = {
 			}
 		}
 		#Coracensia 
-		Y48 = {
+		X48 = {
 			government = tribal_kingdom
 			primary_culture = nuragic
 			religion = carthaginian_pantheon
@@ -16389,7 +16383,7 @@ country = {
 			}
 		}
 		#Luguidonensia
-		Y49 = {
+		X49 = {
 			government = tribal_kingdom
 			primary_culture = nuragic
 			religion = carthaginian_pantheon
@@ -16409,7 +16403,7 @@ country = {
 			}
 		}
 		#Celesitania
-		Y51 = {
+		X50 = {
 			government = tribal_kingdom
 			primary_culture = iliensian
 			religion = carthaginian_pantheon
@@ -16429,7 +16423,7 @@ country = {
 			}
 		}
 		#Rubrinsia
-		Y53 = {
+		X51 = {
 			government = tribal_kingdom
 			primary_culture = iliensian
 			religion = carthaginian_pantheon
