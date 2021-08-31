@@ -26,3 +26,6 @@ yngvi_blessing = {
 cotini_slaves_modifier = {
 	local_goods_from_slaves = -2
 }
+barbaricum_mission_omen_modifier = {
+	omen_power = 0.2
+}
