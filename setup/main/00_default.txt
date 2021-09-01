@@ -16516,7 +16516,7 @@ country = {
 		#Celesitania
 		X50 = {
 			government = tribal_kingdom
-			primary_culture = iliensian
+			primary_culture = nuragic
 			religion = carthaginian_pantheon
 			centralization = 50
 			
@@ -16536,7 +16536,7 @@ country = {
 		#Rubrinsia
 		X51 = {
 			government = tribal_kingdom
-			primary_culture = iliensian
+			primary_culture = nuragic
 			religion = carthaginian_pantheon
 			centralization = 50
 			
