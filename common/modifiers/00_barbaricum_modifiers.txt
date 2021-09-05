@@ -88,3 +88,18 @@ cotini_slaves_modifier = {
 barbaricum_good_omens = {
 	omen_power = 0.2
 }
+##DEMENTIVE VANDAL ADDED NEED LOC
+gallic_trade = {
+	global_commerce_modifier = 0.05
+}
+amber_production = {
+	base_resources = 1.0
+	local_goods_from_slaves = 3.0
+}
+celtic_relations = {
+	diplomatic_reputation = 2.0
+}
+eastern_economic_boost = {
+	local_tax_modifier = 0.05
+	local_population_growth = 0.05
+}
