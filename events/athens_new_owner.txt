@@ -1,0 +1,29 @@
+world_news.2 = { #Athenai is conquered.
+	type = province_event
+	
+	picture = greek_city_market
+	
+	title = "world_news.2.t"
+	desc = "world_news.2.desc"
+	
+	left_portrait = current_ruler
+	
+	trigger = {
+		current_date > 455.1.1 	#Change this date
+		NOT = { has_global_variable = world_news_cooldown_variable_two }
+		NOT = { tag = ATH }	#Event won't fire for Athenai
+		c:ATH = {
+			owns = 416	#Athenai is conquered
+		}
+	}
+	
+	immediate = {
+		set_global_variable = {
+		name = world_news_cooldown_variable_two
+		}
+	}
+	
+	option = {
+		name = "world_news.2.a"
+		##Flavor Text Only
+	}
